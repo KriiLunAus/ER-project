@@ -1,0 +1,116 @@
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding-left: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: block;
+}
+button {
+  cursor: pointer;
+}
+
+li > img {
+  cursor: pointer;
+}
+
+body {
+  background-color: #1c1a1a;
+  color: #fafafa;
+}
+section {
+  width: 1440px;
+  margin: auto;
+  padding-block: 50px;
+  background: 2px solid green;
+}
+
+h1 {
+  margin-left: 40px;
+  font-size: 60px;
+}
+
+.headerSection > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popUpIcon {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  margin-right: 40px;
+}
+
+.bestialSection > h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.listOfBestial {
+  display: flex;
+  flex-direction: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.listOfBestial > li > p {
+  margin-top: 4px;
+  text-align: center;
+}
+
+.modalWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 900px;
+  position: fixed;
+  background-color: #333333;
+  padding: 15px;
+}
+
+.modal > p {
+  font-size: 24px;
+}
+
+.modalInner {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 8px;
+}
+
+.modalInner > ul {
+  width: 150px;
+  margin-block: auto;
+  font-size: 20px;
+}
+
+.modalInner > ul > p {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
